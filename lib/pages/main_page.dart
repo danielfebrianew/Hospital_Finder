@@ -27,7 +27,7 @@ class MainPageState extends State<MainPage> {
   PreferredSizeWidget _appBar() {
     return AppBar(
       backgroundColor: _mainColor,
-      title: const Text('Search Your Hospital'),
+      title: const Text('Health Services'),
       titleTextStyle: GoogleFonts.poppins(
         textStyle: const TextStyle(
           fontWeight: FontWeight.bold,
