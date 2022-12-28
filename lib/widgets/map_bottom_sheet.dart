@@ -26,7 +26,7 @@ class MapBottomSheet extends StatelessWidget {
         color: _secondaryColor,
       ),
       child: Padding(
-        padding: const EdgeInsets.all(15.0),
+        padding: const EdgeInsets.all(10.0),
         child: SizedBox(
           height: 100,
           width: size.width,
@@ -42,11 +42,13 @@ class MapBottomSheet extends StatelessWidget {
                   const SizedBox(
                     width: 10,
                   ),
-                  Text(
-                    placesName,
-                    style: const TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w600,
+                  SafeArea(
+                    child: Text(
+                      placesName,
+                      style: const TextStyle(
+                        fontSize: 17,
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
                   ),
                 ],

@@ -20,7 +20,7 @@ class SearchLocation extends StatefulWidget {
 class _SearchLocationState extends State<SearchLocation> {
   final _cityController = TextEditingController();
   List<Place>? searchPlaces;
-  String selectedValue = "Hospital";
+  String selectedValue = "Rumah Sakit";
 
   @override
   void dispose() {
@@ -154,7 +154,7 @@ class _SearchLocationState extends State<SearchLocation> {
   List<DropdownMenuItem<String>> get dropdownItems {
     List<DropdownMenuItem<String>> menuItems = [
       const DropdownMenuItem(
-        value: "Hospital",
+        value: "Rumah Sakit",
         child: Text("Rumah Sakit"),
       ),
       const DropdownMenuItem(
