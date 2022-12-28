@@ -17,7 +17,6 @@ class MyApp extends StatelessWidget {
       value: MapProvider(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Flutter Demo',
         theme: ThemeData(
           primarySwatch: Colors.lightBlue,
         ),

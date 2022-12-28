@@ -31,7 +31,6 @@ class _MapPageState extends State<MapPage> {
   void initState() {
     _mapController = MapController();
     mapEventSubscription = _mapController.mapEventStream.listen(onMapEvent);
-    // searchLocation();
     super.initState();
   }
 
@@ -133,6 +132,7 @@ class _MapPageState extends State<MapPage> {
 
   void addMarker() {
     final places = Provider.of<MapProvider>(context).mapPlaces;
+
     markers.addAll(
       places.map(
         (e) => Marker(
@@ -145,7 +145,7 @@ class _MapPageState extends State<MapPage> {
               padding: const EdgeInsets.all(0),
               icon: const Icon(
                 Icons.location_on,
-                color: Colors.red,
+                color: _mainColor,
               ),
               onPressed: () => {
                 _mapController.move(LatLng(e.lat, e.lon), 12),

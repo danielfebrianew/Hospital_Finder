@@ -57,7 +57,7 @@ class MapProvider with ChangeNotifier {
       extraTags: true,
       nameDetails: true,
     );
-    print('places : $places');
+
     if (places.isNotEmpty) {
       setMapItem = MapItem(
         marketName: market,
@@ -97,7 +97,7 @@ class MapProvider with ChangeNotifier {
                 padding: const EdgeInsets.all(0),
                 icon: const Icon(
                   Icons.location_on,
-                  color: Colors.red,
+                  color: Colors.blue,
                 ),
                 onPressed: () => {
                   mapController.move(LatLng(e.lat, e.lon), 12),

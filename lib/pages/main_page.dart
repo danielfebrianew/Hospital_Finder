@@ -35,6 +35,19 @@ class MainPageState extends State<MainPage> {
         ),
       ),
       centerTitle: true,
+      leading: const Icon(
+        Icons.search,
+        color: _secondaryColor,
+      ),
+      actions: const [
+        Icon(
+          Icons.map,
+          color: _secondaryColor,
+        ),
+        SizedBox(
+          width: 20,
+        ),
+      ],
     );
   }
 
